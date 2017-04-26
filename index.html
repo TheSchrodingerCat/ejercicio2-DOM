@@ -15,16 +15,18 @@
 	<div id="resultado"></div>
 
 	<script>
-		var cantMensaje = document.getElementsByClassName("mensaje");
-		var numero = document.getElementById("resultado");
-		if (cantMensaje.length==1){
-			numero.innerHTML = "<br /> <b> Es muy poco </b>";
-		} else if (cantMensaje.length>2 && cantMensaje.length<4){
-			numero.innerHTML = "<br /> <b> No está mal</b>";
-		} else if (cantMensaje.length>=4){
-			numero.innerHTML = "<br /> <b> Son muchos!</b>";
+		function message(){
+			var cantMensaje = document.getElementsByClassName("mensaje");
+			var numero = document.getElementById("resultado");
+			if (cantMensaje.length==1){
+				numero.innerHTML = "<br /> <b> Es muy poco </b>";
+			} else if (cantMensaje.length>2 && cantMensaje.length<4){
+				numero.innerHTML = "<br /> <b> No está mal</b>";
+			} else if (cantMensaje.length>=4){
+				numero.innerHTML = "<br /> <b> Son muchos!</b>";
+			}
 		}
-
+		message();
 	</script>
 </body>
 </html>
